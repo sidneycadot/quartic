@@ -30,6 +30,8 @@ static complex_double complex_cbrt(const complex_double z)
 
 void solve_quartic(const complex_double coefficients[5], complex_double roots[4])
 {
+    // The algorithm below was derived by solving the quartic in Mathematica, and simplifying the resulting expression by hand.
+
     const complex_double a = coefficients[4];
     const complex_double b = coefficients[3] / a;
     const complex_double c = coefficients[2] / a;
