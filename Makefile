@@ -3,7 +3,7 @@
 
 CXXFLAGS = -W -Wall -O3 -std=c++11
 
-test-quartic : test-quartic.cc solve_quartic.h
+test-quartic : test-quartic.cc solve-quartic.cc solve-quartic.h
 
 test : test-quartic
 	./test-quartic
