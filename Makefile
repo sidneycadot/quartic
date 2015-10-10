@@ -3,10 +3,10 @@
 
 CXXFLAGS = -W -Wall -O3 -std=c++11
 
-test : quartic
-	./quartic
+test-quartic : test-quartic.cc solve_quartic.h
 
-quartic : quartic.cc
+test : test-quartic
+	./test-quartic
 
 clean :
-	$(RM) *~ quartic
+	$(RM) *~ test-quartic
